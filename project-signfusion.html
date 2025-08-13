@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignFusion — Project Case Study</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="Case study for SignFusion, a real-time sign language converter using MediaPipe and Vosk." />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Muhammad Malik</h1>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="meeting.html">Meeting</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme"><span>🌙</span></button>
+    </nav>
+    <main class="container">
+      <section class="animate">
+        <h2 class="section-header">SignFusion</h2>
+        <p class="mb-4">Real‑time sign language converter</p>
+        <h3>Problem</h3>
+        <p>
+          Millions of deaf and hard‑of‑hearing individuals rely on sign language
+          to communicate, yet most digital interfaces and services only accept
+          spoken or written input. The goal of SignFusion was to bridge this
+          gap by translating sign language in real time into text and speech.
+        </p>
+        <h3>Approach</h3>
+        <p>
+          We built a web application using Flask that streams video from the
+          client’s webcam. MediaPipe’s Hands model detects hand landmarks in
+          each frame and feeds them into a custom gesture classifier. Vosk is
+          used on the output side to generate speech from the predicted text.
+          The application runs entirely in the browser with minimal latency
+          thanks to WebSockets and lightweight models.
+        </p>
+        <h3>Results</h3>
+        <p>
+          SignFusion demonstrates that accurate sign language translation can be
+          performed in the browser without special hardware. User testing
+          showed average translation latencies under 200 ms and high
+          satisfaction with the intuitiveness of the interface. The system was
+          deployed on Heroku for public access and is open source on GitHub.
+        </p>
+        <h3>Next steps</h3>
+        <p>
+          Future work includes training on larger vocabularies, adding
+          multilingual speech output and integrating sign language generation
+          from text to enable two‑way communication.
+        </p>
+        <p class="mt-4">
+          <a href="https://github.com/MuhammadMalik297/secure-authentication-system-testing-report" target="_blank" rel="noopener" class="btn">View code</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        &copy; <script>document.write(new Date().getFullYear());</script> Muhammad Malik
+      </div>
+      <div class="mt-2">
+        <a href="mailto:mu.malik2001@gmail.com" title="mu.malik2001@gmail.com">Email</a>
+        <a href="https://github.com/MuhammadMalik297" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-malik-b687b4223/" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

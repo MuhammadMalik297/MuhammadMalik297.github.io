@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Data Engineering — Project Case Study</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="Case study describing a scalable data engineering solution built on AWS." />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Muhammad Malik</h1>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="meeting.html">Meeting</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme"><span>🌙</span></button>
+    </nav>
+    <main class="container">
+      <section class="animate">
+        <h2 class="section-header">AWS Data Engineering</h2>
+        <p class="mb-4">Building scalable pipelines on the cloud</p>
+        <h3>Problem</h3>
+        <p>
+          Organisations often struggle to move from prototype analytics to
+          production‑grade data infrastructure. The objective of this project
+          was to design and implement a scalable data pipeline on AWS that
+          ingests, transforms and serves large datasets for downstream
+          analytics.
+        </p>
+        <h3>Approach</h3>
+        <p>
+          We architected a pipeline using AWS EC2, S3, Glue and Redshift.
+          Raw data is collected from multiple sources and stored in S3 buckets.
+          AWS Glue runs ETL jobs to clean, normalise and partition the data.
+          Processed data is loaded into Redshift for efficient querying and
+          visualised through BI tools. Infrastructure is codified using
+          CloudFormation and orchestrated via Airflow for scheduling and
+          monitoring.
+        </p>
+        <h3>Results</h3>
+        <p>
+          The pipeline can handle terabytes of data, scales horizontally and
+          reduces manual maintenance through automation. Query latency in
+          Redshift is sub‑second for most analytical workloads. The system
+          enables analysts to build dashboards and derive insights without
+          worrying about underlying complexity.
+        </p>
+        <h3>Next steps</h3>
+        <p>
+          Planned improvements include implementing data quality checks,
+          streaming ingestion via Kinesis and adding fine‑grained access
+          controls.
+        </p>
+        <p class="mt-4">
+          <a href="https://github.com/MuhammadMalik297/metro-datawarehouse-project" target="_blank" rel="noopener" class="btn">View code</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        &copy; <script>document.write(new Date().getFullYear());</script> Muhammad Malik
+      </div>
+      <div class="mt-2">
+        <a href="mailto:mu.malik2001@gmail.com" title="mu.malik2001@gmail.com">Email</a>
+        <a href="https://github.com/MuhammadMalik297" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-malik-b687b4223/" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

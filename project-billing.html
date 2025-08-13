@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOLOv8 Billing System — Project Case Study</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="Case study for a YOLOv8-based billing system that automates checkout through object detection." />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Muhammad Malik</h1>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="meeting.html">Meeting</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme"><span>🌙</span></button>
+    </nav>
+    <main class="container">
+      <section class="animate">
+        <h2 class="section-header">YOLOv8 Billing System</h2>
+        <p class="mb-4">Object detection‑driven checkout</p>
+        <h3>Problem</h3>
+        <p>
+          Point‑of‑sale systems in grocery stores and cafeterias are labor
+          intensive and prone to human error. We set out to build a proof of
+          concept for a cashierless checkout: customers place items under a
+          camera and the system automatically tallies their total using
+          computer vision.
+        </p>
+        <h3>Approach</h3>
+        <p>
+          Using the YOLOv8 object detection model, we trained custom weights to
+          recognize a range of products. A web application built with Flask
+          streams frames from a camera, runs inference on each frame and
+          aggregates detected items into a bill. OpenCV handles the video
+          capture and annotation, while a lightweight front end displays
+          results in real time.
+        </p>
+        <h3>Results</h3>
+        <p>
+          The system achieves high accuracy in identifying items and produces a
+          seamless user experience: scanning an item and updating the total
+          takes under 100 ms on a consumer GPU. This project demonstrates how
+          modern object detection can simplify everyday tasks and reduce
+          friction at checkout.
+        </p>
+        <h3>Next steps</h3>
+        <p>
+          To move toward deployment, the next phase involves expanding the
+          product catalogue, integrating weight sensors for validation and
+          packaging the solution into a portable kiosk.
+        </p>
+        <p class="mt-4">
+          <a href="https://github.com/MuhammadMalik297/secure-authentication-system-testing-report" target="_blank" rel="noopener" class="btn">View code</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        &copy; <script>document.write(new Date().getFullYear());</script> Muhammad Malik
+      </div>
+      <div class="mt-2">
+        <a href="mailto:mu.malik2001@gmail.com" title="mu.malik2001@gmail.com">Email</a>
+        <a href="https://github.com/MuhammadMalik297" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-malik-b687b4223/" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

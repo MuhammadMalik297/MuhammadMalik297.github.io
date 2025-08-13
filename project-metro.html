@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro BI &amp; Dashboards — Project Case Study</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="Case study for the Metro BI project, building a data warehouse and interactive dashboards for public transit." />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Muhammad Malik</h1>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="meeting.html">Meeting</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme"><span>🌙</span></button>
+    </nav>
+    <main class="container">
+      <section class="animate">
+        <h2 class="section-header">Metro BI &amp; Dashboards</h2>
+        <p class="mb-4">Spatial analytics and business intelligence dashboards</p>
+        <h3>Problem</h3>
+        <p>
+          Metro systems generate massive amounts of operational data, but they
+          often lack consolidated insights for planning and decision making. The
+          objective of this capstone project was to create a data warehouse
+          for public transit data and design interactive dashboards for
+          stakeholders.
+        </p>
+        <h3>Approach</h3>
+        <p>
+          Using PostgreSQL and PostGIS, we designed a star schema to store
+          ridership, station and fare data. ETL scripts ingested CSV and JSON
+          feeds into the warehouse. Tableau and Power BI were used to build
+          dashboards showing passenger flows, peak load times and revenue by
+          line. The visualisations allow drilling down by station and time
+          period.
+        </p>
+        <h3>Results</h3>
+        <p>
+          The dashboard suite enables transit authorities to identify
+          bottlenecks, schedule maintenance effectively and optimise fare
+          structures. Decision makers can explore trends interactively and
+          export reports for monthly reviews.
+        </p>
+        <h3>Next steps</h3>
+        <p>
+          Future work includes incorporating real‑time vehicle location data,
+          integrating predictive models for demand and extending the schema to
+          support multimodal transit.
+        </p>
+        <p class="mt-4">
+          <a href="https://github.com/MuhammadMalik297/metro-datawarehouse-project" target="_blank" rel="noopener" class="btn">View code</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        &copy; <script>document.write(new Date().getFullYear());</script> Muhammad Malik
+      </div>
+      <div class="mt-2">
+        <a href="mailto:mu.malik2001@gmail.com" title="mu.malik2001@gmail.com">Email</a>
+        <a href="https://github.com/MuhammadMalik297" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-malik-b687b4223/" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
